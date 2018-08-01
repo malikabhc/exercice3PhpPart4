@@ -1,3 +1,8 @@
+<?php
+function str($text1, $text2){
+  return $text2 . ' ' . $text1;
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -6,12 +11,7 @@
   </head>
   <body>
     <p>
-      <?php
-        function str($text1, $text2){
-          return $text2 . ' ' . $text1;
-        }
-        echo str('Bonjour', 'Au revoir');
-      ?>
+      <?= str('Bonjour', 'Au revoir'); ?>
     </p>
   </body>
 </html>
